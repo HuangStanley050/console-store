@@ -2,3 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+.hovereffect:hover {
+  background-color: yellow;
+  transition: all 0.8s linear;
+}

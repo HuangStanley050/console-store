@@ -2,15 +2,7 @@ import React, { Component } from "react";
 import NavigationLinks from "./navigationLinks";
 import NavigationIcons from "./navigationIcons";
 import { Link } from "gatsby";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand } from "reactstrap";
 
 class Navigation extends Component {
   state = {
@@ -27,22 +19,19 @@ class Navigation extends Component {
       <nav>
         <Navbar color="light" light expand="md">
           <NavbarBrand tag={Link} to="/">
-            <div style={{ border: "2px solid black", padding: "0.5rem" }}>
+            <div
+              style={{
+                border: "2px solid black",
+                padding: "0.5rem",
+                fontWeight: "bold",
+              }}
+            >
               GameShop
             </div>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="mx-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
-                </NavLink>
-              </NavItem>
-            </Nav>
+            <NavigationLinks />
           </Collapse>
         </Navbar>
       </nav>
