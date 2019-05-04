@@ -7,3 +7,30 @@
   background-color: yellow;
   transition: all 0.8s linear;
 }
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 1s linear;
+}
+
+.icon:hover {
+  color: yellow;
+}
+
+.facebook-icon {
+  color: #3b579d;
+}
+
+.twitter-icon {
+  color: #3ab7f0;
+}
+
+.instagram-icon {
+  color: #da5f53;
+}
+@media (max-width:768px) {
+  .icon {
+    display: none;
+  }
+}

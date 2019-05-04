@@ -33,6 +33,7 @@ class Navigation extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <NavigationLinks />
           </Collapse>
+          <NavigationIcons />
         </Navbar>
       </nav>
     );

@@ -35,7 +35,7 @@ class NavigationLinks extends Component {
             <NavItem key={link.id}>
               <NavLink
                 className="font-weight-bold hovereffect"
-                style={{ fontSize: "1.5rem" }}
+                style={{ fontSize: "1.5rem", color: "black" }}
                 tag={Link}
                 to={link.path}
               >
