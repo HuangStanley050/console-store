@@ -24,6 +24,7 @@ class NavigationIcons extends React.Component {
   render() {
     return (
       <div
+        className="icon-holder"
         style={{
           width: "10rem",
           display: "flex",

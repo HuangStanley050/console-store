@@ -5,7 +5,7 @@
 
 .hovereffect:hover {
   background-color: yellow;
-  transition: all 0.8s linear;
+  transition: all 1s linear;
 }
 
 .icon {
@@ -30,7 +30,8 @@
   color: #da5f53;
 }
 @media (max-width:768px) {
-  .icon {
+  .icon,
+  icon-holder {
     display: none;
   }
 }
