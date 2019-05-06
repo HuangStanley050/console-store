@@ -1,11 +1,13 @@
-* {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100%;
 }
 
 .hovereffect:hover {
-  background-color: yellow;
+  background-color: yellow !important;
   transition: all 1s linear;
 }
 
@@ -29,6 +31,28 @@
 
 .instagram-icon {
   color: #da5f53;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+
+.subtitle {
+  color: white;
+  font-family: Caveat;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.2rem;
+  margin: 0.5rem auto;
+  background: #d4db0a;
 }
 @media (max-width:768px) {
   .icon,

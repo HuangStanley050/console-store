@@ -11,6 +11,7 @@ const HomeHeader = ({ img, children }) => {
     justifyContent: "center",
     alignItems: "center",
     objectFit: "cover",
+    marginBottom: "0",
   };
   return (
     <section>
@@ -29,6 +30,9 @@ const PageHeader = ({ img, children }) => {
     backgroundSize: "cover",
     height: "60vh",
     objectFit: "cover",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   };
   return (
     <section>
