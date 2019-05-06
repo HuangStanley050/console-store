@@ -10,6 +10,7 @@ const HomeHeader = ({ img, children }) => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    objectFit: "cover",
   };
   return (
     <section>
@@ -22,8 +23,22 @@ const HomeHeader = ({ img, children }) => {
   );
 };
 
-const PageHeader = () => {
-  return null;
+const PageHeader = ({ img, children }) => {
+  const headerStyle = {
+    backgroundImage: `url(${img})`,
+    backgroundSize: "cover",
+    height: "60vh",
+    objectFit: "cover",
+  };
+  return (
+    <section>
+      <Container style={{ padding: "0px" }} fluid>
+        <Jumbotron style={headerStyle} fluid>
+          {children}
+        </Jumbotron>
+      </Container>
+    </section>
+  );
 };
 
 HomeHeader.defaultProps = {
