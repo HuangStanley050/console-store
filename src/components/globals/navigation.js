@@ -17,7 +17,11 @@ class Navigation extends Component {
   render() {
     return (
       <nav>
-        <Navbar color="light" light expand="md">
+        <Navbar
+          style={{ backgroundColor: "rgba(50, 115, 220, 0.3)" }}
+          light
+          expand="md"
+        >
           <NavbarBrand tag={Link} to="/">
             <div
               style={{

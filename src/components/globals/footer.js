@@ -44,10 +44,10 @@ class Footer extends Component {
         </div>
         <div
           style={{
-            width: "10rem",
+            width: "126px",
             display: "flex",
             justifyContent: "space-between",
-            margin: "0 auto",
+            margin: "1rem auto",
           }}
         >
           {this.state.icons.map(icon => (
