@@ -8,14 +8,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./layout.css";
 import Navigation from "./globals/navigation";
+import Footer from "./globals/footer";
 
 const Layout = ({ children }) => (
   <>
     <Navigation />
     {children}
+    <Footer />
   </>
 );
 
