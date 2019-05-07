@@ -34,6 +34,11 @@ const Gallery = props => {
     width: "90vw",
     margin: "0 auto",
   };
+  const galleryGrid = {
+    display: "grid",
+    gridTemplateColumns: "auto",
+    gridRowGap: "1rem",
+  };
   return (
     <StaticQuery
       query={SINGLE_IMAGE}
@@ -43,17 +48,19 @@ const Gallery = props => {
         const img3 = data.img3.childImageSharp.fluid;
         return (
           <section style={wrapperStyle}>
-            <div className="item item1">
-              <Img fluid={img1} />
-              <p>awesome stuff</p>
-            </div>
-            <div className="item item2">
-              <Img fluid={img2} />
-              <p>awesome stuff</p>
-            </div>
-            <div className="item item3">
-              <Img fluid={img3} />
-              <p>awesome stuff</p>
+            <div className="gallery-container">
+              <div className="item item1">
+                <Img fluid={img1} />
+                <p className="info">awesome stuff</p>
+              </div>
+              <div className="item item2">
+                <Img fluid={img2} />
+                <p className="info">awesome stuff</p>
+              </div>
+              <div className="item item3">
+                <Img fluid={img3} />
+                <p className="info">awesome stuff</p>
+              </div>
             </div>
           </section>
         );

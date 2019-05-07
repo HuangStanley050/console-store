@@ -54,9 +54,54 @@ html {
   margin: 0.5rem auto;
   background: #d4db0a;
 }
-@media (max-width:768px) {
+
+.item {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d4db0a;
+  padding: 0.1rem 0.3rem;
+  text-transform: capitalize;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 1rem;
+}
+@media (max-width:576px) {
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .icon,
   icon-holder {
     display: none;
+  }
+}
+@media (max-width:768px) {
+  .gallery-container {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (max-width:992px) {
+  .gallery-container {
+    grid-template-areas: 'one one two two' 'one one three three';
+  }
+
+  .item1 {
+    grid-area: one;
+  }
+
+  .item2 {
+    grid-area: two;
+  }
+
+  .item3 {
+    grid-area: three;
   }
 }
